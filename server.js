@@ -89,7 +89,6 @@ app.delete('/students/:id', async (req, res) => {
 
 // ====== Connect to MongoDB Atlas ======
 async function startServer() {
-  console.log('Connecting to:', process.env.MONGODB_URI);
 
   try {
     await mongoose.connect(process.env.MONGODB_URI);
